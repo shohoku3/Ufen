@@ -1,0 +1,416 @@
+
+
+/*box*/
+
+.box {
+    margin-top: 40px;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    background: #fff;
+}
+
+.list {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -600px;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 75px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background: #333;
+    cursor: pointer;
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, .5);
+}
+
+.next {
+    right: 0;
+}
+
+li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 751px;
+    height: 300px;
+    border: none;
+    float: left;
+}
+
+.p1 {
+    transform: translate3d(-224px, 0, 0) scale(0.81);
+}
+
+.p2 {
+    transform: translate3d(0px, 0, 0) scale(0.81);
+    transform-origin: 0 50%;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.p3 {
+    transform: translate3d(224px, 0, 0) scale(1);
+    z-index: 3;
+    opacity: 1;
+}
+
+.p4 {
+    transform: translate3d(449px, 0, 0) scale(0.81);
+    transform-origin: 100% 50%;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.p5 {
+    transform: translate3d(672px, 0, 0) scale(0.81);
+}
+
+.p6 {
+    transform: translate3d(896px, 0, 0) scale(0.81);
+}
+
+.p7 {
+    transform: translate3d(1120px, 0, 0) scale(0.81);
+}
+
+.buttons {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 10px;
+    background: #fff;
+}
+
+.buttons a {
+    display: inline-block;
+    width: 38px;
+    height: 5px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #333;
+}
+
+.blue {
+    background: #e3e3e3;
+}
+
+.main-box {
+    width: 84%;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    border-top:1px solid #e3e3e3;
+}
+
+.main-box .content {
+    width: 100%;
+    height: 100%;
+}
+
+.main-box .content dl {
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin: 10px 13px;
+}
+
+.main-box .content dt img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    top: 20px
+}
+
+.main-box .content dt p {
+    font-size: 25px;
+    font-family: '微软雅黑';
+    text-align: center;
+    color: #333;
+    background: #fff;
+    line-height: 90px;
+}
+
+.main-box .content dd {
+    color: #fff;
+    font-size: 18px;
+    font-family: '微软雅黑';
+    text-indent: 20px;
+    padding: 5px;
+}
+
+.banner {
+    width: 100%;
+    height: 60px;
+    float: left;
+    background: #e3e3e3;
+}
+
+.banner #banner-header {
+    font-size: 30px;
+    color: #333;
+    text-align: left;
+    font-family: '微软雅黑';
+    line-height: 60px;
+    text-indent: 80px;
+    float: left;
+    display: inline-block;
+    float: left;
+}
+
+.banner .right-banner {
+    float: right;
+    width: 65%;
+    height: auto;
+}
+
+.banner .right-banner span {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+    background: #fff;
+    text-align: center;
+    color: #333;
+    font-size: 17px;
+    font-family: '微软雅黑';
+    line-height: 60px;
+    background: #e3e3e3;
+}
+
+.banner .right-banner span a {
+    color: #333;
+    cursor: pointer;
+}
+
+.banner .right-banner span a:hover {
+     color:#F36C1F;
+}
+
+
+/*waterfall*/
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: 60px auto 0px auto;
+    padding: 10px 0px;
+}
+
+#waterfall {
+    -moz-column-count: 6;
+    /* Firefox */
+    -webkit-column-count: 6;
+    /* Safari 和 Chrome */
+    column-count: 6;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+}
+
+.item {
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+    -moz-page-break-inside: avoid;
+    -webkit-page-break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height:150px;
+}
+
+.item p {
+    text-align: center;
+    font-family: '微软雅黑';
+    font-size: 13px;
+    margin: 5px 0px;
+}
+
+.item .cash {
+    font-size: 20px;
+    color: #e4393c;
+}
+
+.item .shop {
+    font-size: 13px;
+}
+
+/*product*/
+.product
+{
+    width:100%;
+    height:500px;
+}
+.product-box
+{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+    border-top:1px solid #e3e3e3;
+    border-bottom:1px solid #e3e3e3;
+    overflow:hidden;
+}
+.product-header
+{
+    width:33%;
+    height:90px;
+    margin:0 auto;
+}
+.product-header h1
+{
+    font-size:30px;
+    text-align:center;
+    font-family:'微软雅黑';
+    font-weight:400;
+    color:#333;
+    margin-bottom:0px;
+}
+.product-header p{
+    font-size:20px;
+    font-family:'微软雅黑';
+    color:#0072b8;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+    display:inline-block;
+    margin:0px 10px;
+    border-bottom:1px solid #e3e3e3
+}
+.product-header p:hover
+{
+    border-bottom:2px solid #0072b8; 
+}
+.product-box #app1
+{
+    width:250px;
+    height:450px;
+    position:relative;
+    left:150px;
+    top:20px;
+}
+.product-box #app2
+{
+    width:200px;
+    height:400px;
+    position:relative;
+    top:40px;
+    left:130px;
+    z-index:-10;
+    transform: rotateZ(10deg);
+}
+#binary-code2
+{
+    position:relative;
+    left:200px;
+    top:200px;
+}
+/*about*/
+
+.about {
+    width: 100%;
+    height: 250px;
+    background: #e3e3e3;
+}
+
+.about-box {
+    width: 80%;
+    height:180px;
+    margin: 30px auto;
+    border-bottom: 1px solid #333;
+}
+
+.binary-code {
+    width: 170px;
+    height: 170px;
+    float: left;
+    padding: 10px;
+}
+
+.binary-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.right-box {
+    width: 80%;
+    height: 170px;
+    float: right;
+}
+
+.right-box dl {
+    width: 24%;
+    height: 100%;
+    display: inline-block;
+}
+
+.right-box dl dt {
+    font-family: '微软雅黑';
+    font-size: 20px;
+    color: #333;
+    text-indent: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.right-box dl dd {
+    font-family: '微软雅黑';
+    font-size: 15px;
+    color: #333;
+    text-indent: 20px;
+    margin: 5px;
+    cursor:pointer;
+}
+.about-bottom
+{
+	font-family: '微软雅黑';
+    font-size: 15px;
+    display:block;
+    text-align:center;
+    line-height:60px;
+    position:relative;
+    left:-150px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scaleable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="ture">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="U分，分期，分期信息，分期信息平台">
+    <meta name="description" content="U分是一个专注于分期信息的收集平台">
+    <title>U分 分期平台</title>
+    <!--default css-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <!--page css-->
+    <!--common css-->
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-bar">
+            <a href="index.html">主页+</a>
+            <a href="#">分期比价</a>
+            <a href="#">分期分类</a>
+            <a href="#">U选商品</a>
+            <a href="#">U 划算</a>
+            <a href="#">平台入驻</a>
+            <a href="#">联系我们</a>
+        </div>
+        <div class="right-bar">
+            <a href="#">注 册</a>
+            <a href="#">登 陆</a>
+        </div>
+    </div>
+    <div class="cotn_principal">
+        <div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                    <div class="col_md_login">
+                        <div class="cont_ba_opcitiy">
+                            <h2>Login</h2>
+                            <p style="font-family:'微软雅黑';font-weight:100">请输入你的身份信息</p>
+                            <br>
+                            <button class="btn_login" onClick="cambiar_login()">登陆</button>
+                        </div>
+                    </div>
+                    <div class="col_md_sign_up">
+                        <div class="cont_ba_opcitiy">
+                            <h2>Sign Up</h2>
+                            <p style="font-family:'微软雅黑';font-weight:100">请填写相关信息，为保证信息的安全，请勿泄漏个人密码</p>
+                            <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey"> <img src="image/55430-106.jpg" alt="" /> </div>
+                </div>
+                <div class="cont_forms">
+                    <div class="cont_img_back_grey"> <img src="image/55430-106.jpg" alt="" /> </div>
+                    <div class="cont_form_login">
+                        <a href="#" onClick="ocultar_login_sign_up()"></a>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="用户名" autocomplete="off" required="required" name="Username" />
+                        <input type="password" placeholder="密码" autocomplete="off" required="required" name="Password" maxlength="6" />
+                        <button class="btn_login" onClick="cambiar_login()">登陆</button>
+                    </div>
+                    <div class="cont_form_sign_up">
+                        <a href="#" onClick="ocultar_login_sign_up()"></a>
+                        <h2>SIGN UP</h2>
+                        <input type="text" placeholder="用户名" autocomplete="off" required="required" name="Username" />
+                        <input type="password" placeholder="密码" autocomplete="off" required="required" name="Password" maxlength="6" />
+                        <input type="text" placeholder="手机号" autocomplete="off" required="required" name="Phone" maxlength="11" />
+                        <input type="text" placeholder="验证码" autocomplete="off" required="required" name="confirm_password" maxlength="4" />
+                        <button class="btn_sign_up" onClick="cambiar_sign_up()" href="login-resigter.html">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>

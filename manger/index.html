@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+</head>
+
+<body style="font-family:'微软雅黑'">
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><i class="large material-icons">insert_chart</i> <strong>Ufen</strong></a>
+                <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i class="fa fa-envelope fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown2"><i class="fa fa-bell fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>张雪峰</b> <i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content" style="font-family:'微软雅黑'">
+            <li><a href="#"><i class="fa fa-user fa-fw"></i>个人资料</a>
+            </li>
+            <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
+            </li>
+            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
+            </li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content w250">
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-comment fa-fw"></i> New Comment
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                        <span class="pull-right text-muted small">12 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-tasks fa-fw"></i> New Task
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="text-center" href="#">
+                    <strong>全选</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <ul id="dropdown4" class="dropdown-content dropdown-tasks w250">
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>保罗.沃克</strong>
+                        <span class="pull-right text-muted">
+                                        <em>今天</em>
+                                    </span>
+                    </div>
+                    <div>兄弟,今天速度与激情上映，快来电影院</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>U分小助手</strong>
+                        <span class="pull-right text-muted">
+                                        <em>昨天</em>
+                                    </span>
+                    </div>
+                    <div>您之前关注的阿迪达斯清风系列今天七五折优惠啦</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>U分小助手</strong>
+                        <span class="pull-right text-muted">
+                                        <em>星期三</em>
+                                    </span>
+                    </div>
+                    <div>12月28日趣分期平台回馈客户,12月免息</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="text-center" href="#">
+                    <strong>全部信息</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu" style="font-family:'微软雅黑">
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i>个人中心</a>
+                    </li>
+                </ul>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div class="header">
+                <h1 class="page-header">
+                            个人中心
+                        </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li class="active">数据</li>
+                </ol>
+            </div>
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card horizontal cardIcon waves-effect waves-dark">
+                            <div class="card-image red">
+                                <i class="fa fa-eye fa-5x"></i>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3>16,150</h3>
+                                </div>
+                                <div class="card-action">
+                                    <strong>月度浏览商品数</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card horizontal cardIcon waves-effect waves-dark">
+                            <div class="card-image orange">
+                                <i class="fa fa-shopping-cart fa-5x"></i>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3 style="color:#F44336">2,550</h3>
+                                </div>
+                                <div class="card-action">
+                                    <strong>U分已累计帮您节省</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card horizontal cardIcon waves-effect waves-dark">
+                            <div class="card-image blue">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3>1,225</h3>
+                                </div>
+                                <div class="card-action">
+                                    <strong>累计评价数量</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card horizontal cardIcon waves-effect waves-dark">
+                            <div class="card-image">
+                                <i class="fa fa-users fa-5x"></i>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3>25</h3>
+                                </div>
+                                <div class="card-action">
+                                    <strong>粉丝数</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card-panel text-center">
+                            <h4>信用等级</h4>
+                            <div class="easypiechart" id="easypiechart-blue" data-percent="82"><span class="percent">82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card-panel text-center">
+                            <h4>当日活跃度</h4>
+                            <div class="easypiechart" id="easypiechart-red" data-percent="66"><span class="percent">66%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card-panel text-center">
+                            <h4>白条使用额度</h4>
+                            <div class="easypiechart" id="easypiechart-teal" data-percent="54"><span class="percent">54%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="card-panel text-center">
+                            <h4>节省额度</h4>
+                            <div class="easypiechart" id="easypiechart-orange" data-percent="30"><span class="percent">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+                <div class="row" style="display:none;">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <div id="morris-line-chart"></div>
+                            </div>
+                            <div class="card-action">
+                                <b>月度活跃度</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card">
+                            <div class="card-image">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                            <div class="card-action">
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="card-image">
+                                <div id="morris-area-chart"></div>
+                            </div>
+                            <div class="card-action">
+                                <b>个平台比价</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="card-image">
+                                <div id="morris-donut-chart"></div>
+                            </div>
+                            <div class="card-action">
+                                <b>花费饼图</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    
+                </div>
+                <!-- /. ROW  -->
+                <div class="fixed-action-btn horizontal click-to-toggle">
+                    <a class="btn-floating btn-large red">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                    </ul>
+                </div>
+                <footer>
+                    <p>Copyright &copy; 2016.Company name All rights reserved.</p>
+                </footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+        </div>
+        <!-- /. WRAPPER  -->
+        <!-- JS Scripts-->
+        <!-- jQuery Js -->
+        <script src="assets/js/jquery-1.10.2.js"></script>
+        <!-- Bootstrap Js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/materialize/js/materialize.min.js"></script>
+        <!-- Metis Menu Js -->
+        <script src="assets/js/jquery.metisMenu.js"></script>
+        <!-- Morris Chart Js -->
+        <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+        <script src="assets/js/morris/morris.js"></script>
+        <script src="assets/js/easypiechart.js"></script>
+        <script src="assets/js/easypiechart-data.js"></script>
+        <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+        <!-- Custom Js -->
+        <script src="assets/js/custom-scripts.js"></script>
+</body>
+
+</html>

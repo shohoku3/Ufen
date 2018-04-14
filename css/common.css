@@ -1,0 +1,98 @@
+#homepage{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	-webkit-perspective:800px;
+	perspective:800px;
+}
+
+/*top-nav*/
+#home-top{
+	width:100%;
+	height:70px;
+	position:flex;
+	top:0px;
+	background:#222d32;
+	float:left;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.25);
+	z-index:100;
+	line-height: 30px;
+	color:#fff;
+	font-size:15px;
+	cursor: pointer;
+}
+#home-top #logo{
+	float:left;
+}
+#home-top a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    margin:15px;
+    border:1px solid #fff;
+}
+.header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #333;
+}
+
+.left-bar {
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 5%;
+    overflow: hidden;
+    list-style: none;
+    font-size: 13px;
+    font-family: '微软雅黑';
+    line-height: 40px;
+    font-weight: 100;
+}
+
+.left-bar a {
+    width: 90px;
+    height: 100%;
+    float: left;
+    padding: 0px;
+    text-align: center;
+}
+
+.left-bar a:hover {
+    color:#F36C1F;
+}
+
+.right-bar {
+    width: auto;
+    height: 100%;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 2%;
+    list-style: none;
+    font-size: 13px;
+    font-family: '微软雅黑';
+    line-height: 40px;
+    font-weight: 100;
+}
+
+.right-bar a {
+    width: 80px;
+    height: 100%;
+    float: right;
+    padding: 0px;
+    text-align: center;
+}
+
+.right-bar a:hover {
+    color:#F36C1F;
+}
